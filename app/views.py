@@ -21,7 +21,10 @@ def index():
                            member=member,
                            results=results)
 
-@app.route('/member')
-def member():
-    return render_template('member.html', title='Member')
+@app.route('/memberprofile')
+def memberprofile():
+    return render_template('memberprofile.html', title='Member')
 
+@app.route('/memberedit')
+def memberedit():
+    return  render_template('memberedit.html') # TODO edit / create memberedit.html

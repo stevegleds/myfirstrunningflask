@@ -1,4 +1,8 @@
 30 July 2016
+Added classes to models.py ready for linking with db
+Created memberedit file to manage members
+
+30 July 2016
 added base.html, index and member pages
 
 30 July 2016
