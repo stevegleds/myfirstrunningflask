@@ -1,4 +1,7 @@
 30 July 2016
+added base.html, index and member pages
+
+30 July 2016
 edited run.py and app\__init__.py to import from app etc.
 added basic view to views.py
 

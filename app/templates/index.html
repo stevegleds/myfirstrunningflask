@@ -1,0 +1,16 @@
+{%  extends "base.html" %}
+{% block content %}
+    <h1>Hello, {{ member.nickname }}!</h1>
+    {% if member.nickname == 'Steve' %}
+    <h2>You have FULL access</h2>
+    {%  else %}
+    <h2>You have LIMITED access</h2>
+    {% endif %}
+    {%  for result in results %}
+     <div><p>
+        {{ result.member.nickname }} ran in the : <b>{{ result.race }}</b>
+    </p></div>
+    {% endfor %}
+
+
+{% endblock %}
