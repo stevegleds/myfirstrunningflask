@@ -6,9 +6,11 @@ SECRET_KEY = "you-will-never-guess"  # from grinberg
 
 import os  # from grinberg
 basedir = os.path.abspath(os.path.dirname(__file__))  ## from grinberg
-app = Flask(__name__)  # create an instance of flask
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
-db = SQLAlchemy(app)  # create an instance of SQLAlchemy
+appal = Flask(__name__)  # create an instance of flask
+appal.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'appal.db')
+db = SQLAlchemy(appal)  # create an instance of SQLAlchemy
+db.create_all()
+
 
 class Example(db.Model):
     __tablename__ = 'example'
