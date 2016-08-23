@@ -28,3 +28,10 @@ def memberprofile():
 @app.route('/memberedit')
 def memberedit():
     return  render_template('memberedit.html') # TODO edit / create memberedit.html
+
+@app.route('/timetrialindex')
+def timetrialindex():
+    from timetrial import timetrial
+    distance = 25
+    print(distance)
+    return render_template('timetrialindex.html', title='Time Trial', distance=distance)

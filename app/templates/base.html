@@ -7,8 +7,9 @@
 <body>
     <div>Race Results for ERR:
         <a href="{{ url_for('index') }}">Home</a>
-        | <a href="{{ url_for('memberedit') }}"> Members </a>
+        | <a href="{{ url_for('memberedit') }}"> Members WIP</a>
         | <a href="{{ url_for('memberprofile') }}"> Your Profile </a>
+        | <a href="{{ url_for('timetrialindex') }}"> Time Trial </a>
     </div>
     <hr>
     {% with messages = get_flashed_messages() %}

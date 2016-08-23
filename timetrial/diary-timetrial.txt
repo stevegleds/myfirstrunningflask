@@ -1,0 +1,45 @@
+21 April 2016
+get_runners_summary add test for pb and update runners_summary accordingly
+need to work on presentation
+next step : work on define show_pbs(runners_distances) to present pbs
+
+02 March 2016
+Worked on def get_runners_summary(new_data, runners_summary) to add data to runner summary
+Need to find a way to update pb date and time(s)
+11 February 2016
+Added runningclasses.py to work on classes
+
+10 February 2016
+Cloned to Desktop
+
+09 February 2016
+Cloned to laptop (old folder renamed to 160209)
+Took all plotting code out of main py file to separate visualize file
+Amended summary function to add individual distances
+
+21 January 2016
+Previous methods not working. Now I'm trying to store data in a dictionary of list like Amanda: 0,0,0
+Problem is the dictionary is a dictionary of tuples. 
+Finally found problem with tuples: needed to initialise as list i.e. : [0,0,0] instead of 0,0,0
+should be able to carry on from here.
+
+16 January 2016
+Stopped program,
+Found distances
+Moved summary functions from parse data into own race_summary function
+created runner_summary function to get max, ave pace etc for each runner.
+populated pace dictionary
+
+14 January 2016
+Fixed Race.
+Also skipped blank rows using if row[1] == "" : pass
+Need to stop the program and add distances for each runner
+
+12 January 2016
+Fixed key error Miles NOw need to fix Race key error
+03 December 2015
+Cloned on desktop (I changed the project/solution folders)
+12 November 2015
+synced on desktop
+11 November 2015
+created new project on laptop
