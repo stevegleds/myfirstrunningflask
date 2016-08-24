@@ -31,7 +31,7 @@ def memberedit():
 
 @app.route('/timetrialindex')
 def timetrialindex():
-    from timetrial import timetrial
+
     distance = 25
     print(distance)
     return render_template('timetrialindex.html', title='Time Trial', distance=distance)

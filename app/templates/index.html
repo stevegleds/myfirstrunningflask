@@ -6,6 +6,7 @@
     {%  else %}
     <h2>You have LIMITED access</h2>
     {% endif %}
+    {%  print(results) %}
     {%  for result in results %}
      <div><p>
         {{ result.member.nickname }} ran in the : <b>{{ result.race }}</b>
