@@ -39,5 +39,5 @@ def timetrialindex():
     race_data = timetrial.parse(timetrial_file, ',')
     runners_list, runners_summary = timetrial.get_runners_starting_list(race_data)
     print('runners summaries in views.py are: ', runners_summary)
-    return render_template('timetrialindex.html', title='Time Trial',
+    return render_template('timetrialindex.html', title='Time Trial', race_data=race_data,
                            runners=runners_list, runners_summary=runners_summary)
