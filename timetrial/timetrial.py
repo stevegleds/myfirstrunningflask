@@ -12,7 +12,7 @@ SLOWEST_PACE = 99
 # 11 November 2015 Added to desktop
 
 # RUN_FILE = 'timetrial/timetrial.csv' # this is  the full file
-filename = 'timetrialtest.csv' # this is a test file
+filename = 'timetrialtest.csv'  # this is a test file
 timetrial_file = os.path.join('timetrial', filename)
 
 
@@ -33,7 +33,7 @@ def parse(raw_file, delimiter):
     parsed_data = []  # this list will store every row of data
     fields = csv_data.__next__()  # this will be the column headers; we can use .next() because csv_data is an iterator
     for row in csv_data:
-        if row[1] == "": # there is no text in the runner field so no data to process
+        if row[1] == "":  # there is no text in the runner field so no data to process
             pass
         else:
             parsed_data.append(dict(zip(fields, row)))  # Creates a new dict item for each row with col header as key and stores in a list

@@ -2,6 +2,7 @@ from flask import render_template, flash, redirect
 from app import app
 from timetrial import timetrial
 import os
+import csv
 
 @app.route('/')
 @app.route('/index')
