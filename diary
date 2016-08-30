@@ -1,5 +1,7 @@
 30 August 2016
 Used os.path.join to fix bad path to timetrial file when uploaded to server
+Looking good but now getting no page even when all code commented out
+Next step, create new template and add to it
 
 28 August 2016
 Successfully imported timetrial module into views.py and passed data to timetrial page.

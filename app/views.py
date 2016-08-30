@@ -29,7 +29,7 @@ def memberprofile():
 
 @app.route('/memberedit')
 def memberedit():
-    return render_template('memberedit.html') # TODO edit / create memberedit.html
+    return render_template('memberedit.html')  # TODO edit / create memberedit.html
 
 
 @app.route('/timetrialindex')
