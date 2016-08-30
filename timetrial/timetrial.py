@@ -1,7 +1,7 @@
 # testing
 
 import csv
-import os as system
+import os
 from collections import Counter
 
 TIME_TRIAL_DISTANCE = 3.0
@@ -12,7 +12,8 @@ SLOWEST_PACE = 99
 # 11 November 2015 Added to desktop
 
 # RUN_FILE = 'timetrial/timetrial.csv' # this is  the full file
-RUN_FILE = 'timetrialtest.csv'  # this is a test file
+filename = 'timetrialtest.csv' # this is a test file
+timetrial_file = os.path.join('timetrial', filename)
 
 
 def parse(raw_file, delimiter):
@@ -113,7 +114,7 @@ def show_pbs(runners_distances):
 
 def main():
     # Call our parse function with required file an delimiter
-    race_data = parse(RUN_FILE, ',')
+    race_data = parse(timetrial_file, ',')
     races_summary(race_data)
     print("The keys in the data are:", race_data[0].keys())
     runners_list, runners_summary = get_runners_starting_list(race_data)

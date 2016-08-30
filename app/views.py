@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect
 from app import app
 from timetrial import timetrial
-
+import os
 
 @app.route('/')
 @app.route('/index')
@@ -33,8 +33,9 @@ def memberedit():
 
 @app.route('/timetrialindex')
 def timetrialindex():
-    file = 'timetrial\\timetrialtest.csv'
-    race_data = timetrial.parse(file, ',')
+    filename = 'timetrialtest.csv'  # this is a test file
+    timetrial_file = os.path.join('timetrial', filename)
+    race_data = timetrial.parse(timetrial_file, ',')
     runners_list, runners_summary = timetrial.get_runners_starting_list(race_data)
     print('runners summaries in views.py are: ', runners_summary)
     return render_template('timetrialindex.html', title='Time Trial', race_data=race_data,
