@@ -2,7 +2,7 @@ from flask import render_template, flash, redirect
 from app import app
 from timetrial import timetrial
 import os
-import csv
+
 
 @app.route('/')
 @app.route('/index')
@@ -39,5 +39,5 @@ def timetrialindex():
     race_data = timetrial.parse(timetrial_file, ',')
     runners_list, runners_summary = timetrial.get_runners_starting_list(race_data)
     print('runners summaries in views.py are: ', runners_summary)
-    return render_template('timetrialindex.html', title='Time Trial', race_data=race_data,
+    return render_template('timetrialindex.html', title='Time Trial',
                            runners=runners_list, runners_summary=runners_summary)
