@@ -3,7 +3,7 @@
     <h3>Total distance in Time trials</h3>
 
     <p>{% print'total distance run is: ', distance %}</p>
-    {#<p>The race keys are {% print race_data[0].keys() %}</p>
+    <p>The race keys are {% print race_data[0].keys() %}</p>
     <p>The runners are {% print runners %}</p>
     <p>Summary of runners performances:</p>
     <p>{% print runners_summary %}</p>
@@ -17,6 +17,6 @@
             </td>
         </tr>
         {% endfor %}
-    </table>#}
+    </table>
 
 {% endblock %}
