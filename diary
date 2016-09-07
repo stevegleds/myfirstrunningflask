@@ -1,3 +1,7 @@
+07 September 2016
+Fixed problem wit timetrial page : needed to specify python 3 on heroku
+Created style.css in static folder need to apply it
+
 30 August 2016
 Used os.path.join to fix bad path to timetrial file when uploaded to server
 Looking good but now getting no page even when all code commented out

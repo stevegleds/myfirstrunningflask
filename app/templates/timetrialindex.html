@@ -5,16 +5,25 @@
     <p>{% print'total distance run is: ', distance %}</p>
     <p>The race keys are {% print race_data[0].keys() %}</p>
     <p>The runners are {% print runners %}</p>
-    <p>Summary of runners performances:</p>
+    <p>The race data is: </p>
+    <p>{% print race_data %}</p>
+    <h2>Summary of runners overall performances:</h2>
     <p>{% print runners_summary %}</p>
     <table>
     <tr><td><h3>Runners for example {% print runners[3] %}</h3></td></tr>
         <tr><td><h4>Runner</h4></td></tr>
-        {% for runner in runners %}
+        <tr >
+            <td>Runner</td>
+            <td>Date</td>
+            <td>Time</td>
+            <td>Pace</td>
+        </tr>
+        {% for result in race_data %}
         <tr>
-            <td>
-            {% print runner %}
-            </td>
+            <td>{% print result['Runner'] %}</td>
+            <td>{% print result['Date'] %}</td>
+            <td>{% print result['Digitime'] %}</td>
+            <td>{% print result['Pace'] %}</td>
         </tr>
         {% endfor %}
     </table>
