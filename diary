@@ -1,3 +1,7 @@
+08 September 2016
+various tests for css using static folder and <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> in <head> tag
+No joy
+
 07 September 2016
 Fixed problem wit timetrial page : needed to specify python 3 on heroku
 Created style.css in static folder need to apply it
