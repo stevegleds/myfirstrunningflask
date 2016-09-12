@@ -1,3 +1,5 @@
+12 September 2016
+fixed css by moving 'static' folder under app folder!
 08 September 2016
 various tests for css using static folder and <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> in <head> tag
 No joy

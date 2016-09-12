@@ -5,8 +5,6 @@
     <p>{% print'total distance run is: ', distance %}</p>
     <p>The race keys are {% print race_data[0].keys() %}</p>
     <p>The runners are {% print runners %}</p>
-    <p>The race data is: </p>
-    <p>{% print race_data %}</p>
     <h2>Summary of runners overall performances:</h2>
     <p>{% print runners_summary %}</p>
     <p class="test" >CSS Test</p>
@@ -29,5 +27,8 @@
         </tr>
         {% endfor %}
     </table>
+    <p>The race data is: </p>
+    <p>{% print race_data %}</p>
+
 
 {% endblock %}
