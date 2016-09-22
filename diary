@@ -1,3 +1,7 @@
+22 September 2016
+Added sort ability to table. Static so far. Can't seem to find a way to make it sortable.
+Seems I need to use the views before calling the template
+
 12 September 2016
 fixed css by moving 'static' folder under app folder!
 08 September 2016

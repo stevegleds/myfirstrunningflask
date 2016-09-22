@@ -9,6 +9,9 @@
     <p>{% print runners_summary %}</p>
     <p class="test" >CSS Test</p>
     <p> CSS Test with no class</p>
+
+
+
     <table>
     <tr><td><h3>Runners for example {% print runners[3] %}</h3></td></tr>
         <tr><td><h4>Runner</h4></td></tr>
@@ -18,7 +21,10 @@
             <td>Time</td>
             <td>Pace</td>
         </tr>
-        {% for result in race_data %}
+        {%  set sort_by = 'Pace' %}
+        {% set sort_on_field = request.args.sort_on | default(sort_by) %}
+        {% for result in race_data | sort(attribute=sort_on_field ) %}
+
         <tr>
             <td>{% print result['Runner'] %}</td>
             <td>{% print result['Date'] %}</td>
@@ -27,7 +33,7 @@
         </tr>
         {% endfor %}
     </table>
-    <p>The race data is: </p>
+    <p>The race data is: {{ id }} </p>
     <p>{% print race_data %}</p>
 
 

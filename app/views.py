@@ -32,7 +32,7 @@ def memberedit():
     return render_template('memberedit.html')  # TODO edit / create memberedit.html
 
 
-@app.route('/timetrialindex')
+@app.route('/timetrialindex', methods=['GET', 'POST'])
 def timetrialindex():
     filename = 'timetrialtest.csv'  # this is a test file
     timetrial_file = os.path.join('timetrial', filename)
