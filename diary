@@ -2,6 +2,8 @@
 Installed flask_table to see if it helps with displaying results in tables.
 Added test in workingfile.py that creates table of results in terminal.
 Next step : create working template so that I can use html to present to web page
+Done. Created tables.html template and it looks good.
+Next step : formatting with css
 
 22 September 2016
 Added sort ability to table. Static so far. Can't seem to find a way to make it sortable.

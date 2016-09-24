@@ -42,3 +42,34 @@ def timetrialindex():
     return render_template('timetrialindex.html', title='Time Trial', race_data=race_data,
                             runners=runners_list, runners_summary=runners_summary)
     # return render_template('timetrialindex.html', title='Time Trial', distance='25')
+
+@app.route('/tables')
+def tables():
+    from flask_table import Table, Col
+    # Declare your table
+
+
+    class ItemTable(Table):
+        Runner = Col('Runner')
+        Digitime = Col('Digitime')
+        Time = Col('Time')
+        Date = Col('Date')
+        Pace = Col('Pace')
+
+    # Get some objects
+    class Item(object):
+        def __init__(self, name, description):
+            self.name = name
+            self.description = description
+
+    filename = 'timetrialtest.csv'  # this is a test file
+    timetrial_file = os.path.join("timetrial", filename)
+    race_data = timetrial.parse(timetrial_file, ',')
+    items = race_data
+    # Populate the table
+    table = ItemTable(items)
+
+    return render_template('tables.html', title='Time Trial', table=table)
+    # Print the html
+    print(table.__html__())
+    # or just {{ table }} from within a Jinja template
