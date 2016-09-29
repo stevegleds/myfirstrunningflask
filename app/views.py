@@ -48,19 +48,25 @@ def tables():
     from flask_table import Table, Col
     # Declare your table
 
-
     class ItemTable(Table):
         Runner = Col('Runner')
         Digitime = Col('Digitime')
         Time = Col('Time')
         Date = Col('Date')
         Pace = Col('Pace')
+        classes = ['class1', 'class2']
+
+        def tr_format(self, item):
+            if float(item['Pace']) < 10:
+                return '<tr class = "fast">{}</tr>'
+            else:
+                return '<tr>{}</tr>'
 
     # Get some objects
-    class Item(object):
-        def __init__(self, name, description):
-            self.name = name
-            self.description = description
+    #  class Item(object):
+        #  def __init__(self, name, description):
+        #    self.name = name
+        #    self.description = description
 
     filename = 'timetrialtest.csv'  # this is a test file
     timetrial_file = os.path.join("timetrial", filename)

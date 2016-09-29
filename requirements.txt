@@ -3,3 +3,4 @@ flask-sqlalchemy
 flask-migrate
 gunicorn
 flask_table
+babel

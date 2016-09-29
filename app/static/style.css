@@ -3,5 +3,16 @@
     font-size: large;
     color: blue;
 }
+.class1 {
+    color: darkblue;
+}
+
+.class2 {
+    background-color: lightblue;
+}
 
 a, h1, h2, p       { color: #377ba8; }
+
+.fast {
+    color: red;
+}
