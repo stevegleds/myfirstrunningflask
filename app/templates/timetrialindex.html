@@ -21,11 +21,14 @@
             <td>Time</td>
             <td>Pace</td>
         </tr>
-        {%  set sort_by = 'Pace' %}
+        {% set sort_by = 'Time' %}
         {% set sort_on_field = request.args.sort_on | default(sort_by) %}
         {% for result in race_data | sort(attribute=sort_on_field ) %}
-
+        {% if result['Runner'] == 'Angela Charge' %}
+        <tr class="fast">
+        {% else %}
         <tr>
+        {% endif %}
             <td>{% print result['Runner'] %}</td>
             <td>{% print result['Date'] %}</td>
             <td>{% print result['Digitime'] %}</td>

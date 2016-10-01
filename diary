@@ -1,3 +1,8 @@
+01 October 2016
+Continued with Plumdog's flask-table but struggled.
+Went back to Flask jinja template and used if/else statement to format based on name
+Next step: get date in right format in python file . i.e. float, integer date.
+
 29 September 2016
 Added classes to table definition and then to <tr>
 Next step: sorting
