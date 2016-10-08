@@ -4,3 +4,5 @@ flask-migrate
 gunicorn
 flask_table
 babel
+pandas
+pandas_datareader

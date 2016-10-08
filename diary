@@ -1,3 +1,7 @@
+08 October 2016
+Created timetrialpandas to try out pandas for csv trying to sort date types such as float and date.
+Seems to be OK. Works with floats but dates are strings
+
 01 October 2016
 Continued with Plumdog's flask-table but struggled.
 Went back to Flask jinja template and used if/else statement to format based on name
