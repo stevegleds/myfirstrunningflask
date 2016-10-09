@@ -18,8 +18,8 @@ SLOWEST_PACE = 99
 filename = 'timetrialtest.csv'  # this is a test file
 timetrial_file = os.path.join('timetrial', filename)
 
-df = pd.read_csv(filename, parse_dates=True)
-#  print(df.head())
-print(df[df.Date > "05-Oct-15"])
-print(df[df.Date < "05-Oct-15"])
-print(df[df.Date == "05-Oct-15"])
+df = pd.read_csv(filename, parse_dates=[0], dayfirst=True)
+print(df.head())
+print(df[df.Date > "2015-10-05"])
+print(df[df.Date < "2015-10-05"])
+print(df[df.Date == "2015-10-05"])

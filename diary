@@ -1,3 +1,7 @@
+09 October 2016
+added parsedates and now recognises dates and stores in yyyy-mm-dd format
+next step see if can sort
+
 08 October 2016
 Created timetrialpandas to try out pandas for csv trying to sort date types such as float and date.
 Seems to be OK. Works with floats but dates are strings
