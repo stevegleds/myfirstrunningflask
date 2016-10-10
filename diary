@@ -1,3 +1,8 @@
+10 October 2016
+Used df.sort_values(...) to sort data file
+Added simple input to sort by user input choice and passed parameter (choice) and is_ascending.
+Need to find a way to stop re-running the csv parsing.
+
 09 October 2016
 added parsedates and now recognises dates and stores in yyyy-mm-dd format
 next step see if can sort

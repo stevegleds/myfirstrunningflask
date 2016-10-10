@@ -20,6 +20,12 @@ timetrial_file = os.path.join('timetrial', filename)
 
 df = pd.read_csv(filename, parse_dates=[0], dayfirst=True)
 print(df.head())
-print(df[df.Date > "2015-10-05"])
-print(df[df.Date < "2015-10-05"])
-print(df[df.Date == "2015-10-05"])
+is_ascending = 'False'
+choice = input('Date, Runner or Time')
+if choice == 'Runner': is_ascending = 'True'
+print(df.sort_values(choice, ascending=is_ascending))
+#  df_date = df.sort_values('Date', ascending=False)
+#  print(df_date)
+#  print(df[df.Date > "2015-10-05"])
+#  print(df[df.Date < "2015-10-05"])
+#  print(df[df.Date == "2015-10-05"])
