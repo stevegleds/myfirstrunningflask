@@ -20,10 +20,15 @@ timetrial_file = os.path.join('timetrial', filename)
 
 df = pd.read_csv(filename, parse_dates=[0], dayfirst=True)
 print(df.head())
-is_ascending = 'False'
-choice = input('Date, Runner or Time')
-if choice == 'Runner': is_ascending = 'True'
-print(df.sort_values(choice, ascending=is_ascending))
+choice =''
+while choice.lower() != 'quit':
+    is_ascending = 'False'
+    choice = input('Date, Runner, Time or Quit')
+    if choice == 'Runner': is_ascending = 'True'
+    if choice.lower() in ('date', 'runner', 'time', 'quit'):
+        print(df.sort_values(choice, ascending=is_ascending))
+    else:
+        print('Please enter Date, Runner, Time or Quit')
 #  df_date = df.sort_values('Date', ascending=False)
 #  print(df_date)
 #  print(df[df.Date > "2015-10-05"])

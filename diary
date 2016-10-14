@@ -1,3 +1,6 @@
+14 October 2016
+Tried to find way to loop but then get stuck on the case
+
 10 October 2016
 Used df.sort_values(...) to sort data file
 Added simple input to sort by user input choice and passed parameter (choice) and is_ascending.
