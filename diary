@@ -1,5 +1,5 @@
-14 October 2016
-Tried to find way to loop but then get stuck on the case
+5 November 2016
+Add beautiful soup file for testing for dates of birth
 
 10 October 2016
 Used df.sort_values(...) to sort data file

@@ -6,3 +6,5 @@ flask_table
 babel
 pandas
 pandas_datareader
+beautifulsoup
+urllib2
