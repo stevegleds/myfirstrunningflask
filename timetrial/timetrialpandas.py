@@ -15,7 +15,7 @@ SLOWEST_PACE = 99
 # 11 November 2015 Added to desktop
 
 # RUN_FILE = 'timetrial/timetrial.csv' # this is  the full file
-filename = 'timetrialtest.csv'  # this is a test file
+filename = 'timetrial/timetrial.csv'  # this is a test file
 timetrial_file = os.path.join('timetrial', filename)
 
 df = pd.read_csv(filename, parse_dates=[0], dayfirst=True)

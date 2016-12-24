@@ -83,6 +83,7 @@ def tables():
 
 @app.route('/timetrialindexpandas', methods=['GET', 'POST'])
 def timetrialindexpandas():
+    # TODO this is copy of normal timetrial. Need to add pandas code.
     filename = 'timetrialtest.csv'  # this is a test file
     timetrial_file = os.path.join('timetrial', filename)
     race_data = timetrial.parse(timetrial_file, ',')
