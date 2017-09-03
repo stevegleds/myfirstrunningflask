@@ -6,4 +6,3 @@ flask_table
 babel
 pandas
 pandas_datareader
-urllib2
