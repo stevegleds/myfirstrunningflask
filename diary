@@ -1,6 +1,6 @@
 03 September 2017
 First time I've looked at this for nearly a year. Just getting to know my way around again.
-Removed beautiful soup and urllib2 from requirements
+Removed beautiful soup and urllib2 from requirements and now fails on heroku (failed before due to not being able to install beautiful soup)
 5 November 2016
 Add beautiful soup file for testing for dates of birth
 
